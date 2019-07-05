@@ -22,6 +22,6 @@
         <Button android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:id="@+id/button"/>
+                android:id="@+id/button" android:text="ENTER" android:background="@color/colorPrimaryDark"/>
     </FrameLayout>
 </RelativeLayout>

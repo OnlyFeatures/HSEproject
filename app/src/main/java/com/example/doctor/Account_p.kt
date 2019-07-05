@@ -15,17 +15,17 @@ class Account_p : AppCompatActivity() {
         setContentView(R.layout.account_p)
         val button1 = findViewById<Button>(R.id.button1)
         val name1 = intent.getStringExtra(NAME)
-        val readed= read(name1)
-        val account = readed.get(0)
-        avalTime = readed.get(1)
+        //val readed= read(name1)
+        //val account = readed.get(0)
+        //avalTime = readed.get(1)
         button1.setOnClickListener{
-            val intent = Intent(this, Calendar_d::class.java)
-            intent.putExtra(Calendar_d.NAME1, name1)
+            val intent = Intent(this, Calendar_p::class.java)
+            //intent.putExtra(Calendar_d.NAME1, name1)
             startActivity(intent)
         }
         val button2 = findViewById<Button>(R.id.button2)
         button2.setOnClickListener{
-            updateTablePerson(name1)
+            //updateTablePerson(name1)
             avalTime = arrayListOf<String>()
             val intent = Intent(this, Start::class.java)
             startActivity(intent)

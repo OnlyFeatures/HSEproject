@@ -5,15 +5,15 @@
                 android:layout_height="match_parent">
 
     <Button
-            android:text="Доктор"
+            android:text="ЗАРЕГиСТРИРОВАТЬСЯ КАК ДОКТОР"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentTop="true"
-            android:id="@+id/button1"/>
+            android:id="@+id/button1" android:layout_marginTop="336dp" android:background="@color/colorPrimaryDark"/>
     <Button
-            android:text="Пациент"
+            android:text="Зарегистрироваться как пациент"
             android:layout_width="match_parent"
             android:layout_height="50dp" android:id="@+id/button2"
             android:layout_alignParentBottom="true"
-    />
+            android:layout_marginBottom="256dp" android:background="@color/colorPrimaryDark"/>
 </RelativeLayout>

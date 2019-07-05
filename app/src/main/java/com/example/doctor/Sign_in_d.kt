@@ -16,7 +16,7 @@ class Sign_in_d : AppCompatActivity(){
         button.setOnClickListener(View.OnClickListener {
             val name = findViewById<EditText>(R.id.editText1).getText().toString()
             val password = findViewById<EditText>(R.id.editText2).getText().toString()
-            val account = arrayListOf (password)
+            val account = arrayListOf (password, "doctor")
             //val res = arrayListOf(account, avalTime)
             getPerson(name, arrayListOf(account, arrayListOf()))
 

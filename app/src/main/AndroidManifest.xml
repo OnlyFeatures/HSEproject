@@ -25,7 +25,9 @@
         <activity android:name=".Enter_p"/>
         <activity android:name=".Enter_d"/>
         <activity android:name=".Calendar_d"/>
-        <activity android:name=".Day"/>
+        <activity android:name=".Day_d"/>
+        <activity android:name=".Calendar_p"/>
+        <activity android:name=".Day_p"/>
 
     </application>
 

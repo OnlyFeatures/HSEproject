@@ -21,3 +21,4 @@ class Enter :AppCompatActivity(){
         }
     }
 }
+// СДЕЛАТЬ ОБЩИЙ ВХОД

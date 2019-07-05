@@ -12,15 +12,24 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/button1"
-    android:layout_above="@+id/button2"/>
+            android:layout_above="@+id/button2" android:layout_marginBottom="181dp"
+            android:background="@color/colorPrimaryDark"/>
     <Button
             android:text="Выход"
             android:layout_width="match_parent"
-            android:layout_height="50dp" android:id="@+id/button2"/>
+            android:layout_height="50dp" android:id="@+id/button2" android:layout_above="@+id/textView2"
+            android:layout_marginBottom="-387dp" android:layout_marginTop="586dp" android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"/>
+
     <TextView
-            android:text="Врач"
-            android:layout_centerInParent="true"
+            android:text="Добро пожаловать в систему, доктор!"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorDoc"
             android:layout_width="match_parent"
-            android:layout_height="50dp" android:id="@+id/textView2"/>
+            android:layout_height="232dp" android:id="@+id/textView3" android:layout_above="@+id/textView2"
+            android:layout_marginBottom="109dp" android:layout_marginTop="0dp" android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="0dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"/>
 
 </RelativeLayout>

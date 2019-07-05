@@ -16,13 +16,22 @@ class Enter_d : AppCompatActivity(){
         button.setOnClickListener(View.OnClickListener {
             val name = findViewById<EditText>(R.id.editText1).getText().toString()
             val password = findViewById<EditText>(R.id.editText2).getText().toString()
-            if(read(name).get(0).get(0) == password){
+            checkd(name, password) { success ->
+                if (success) {
+                    val intent = Intent(this, Account_d::class.java)
+                    intent.putExtra(Account_d.NAME, name)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this, "Вы не зарегистрировались или не врач", Toast.LENGTH_SHORT)
+                }
+            }
+           /* if(read(name).get(0).get(0) == password){
                 val intent = Intent(this, Account_d::class.java)
                 intent.putExtra(Account_d.NAME, name)
                 startActivity(intent)
             }else{
                 Toast.makeText(this, "Вы не зарегистрировались", Toast.LENGTH_SHORT)
-            }
+            }*/
             //val account = arrayListOf (password)
             //val res = arrayListOf(account, avalTime)
 
