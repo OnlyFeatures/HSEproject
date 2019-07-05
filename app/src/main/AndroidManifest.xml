@@ -9,14 +9,22 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Account">
+        <activity android:name=".Start">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Calendar"/>
+        <activity android:name=".Sign_in"/>
+        <activity android:name=".Sign_in_d"/>
+        <activity android:name=".Sign_in_p"/>
+        <activity android:name=".Account_d"/>
+        <activity android:name=".Account_p"/>
+        <activity android:name=".Enter"/>
+        <activity android:name=".Enter_p"/>
+        <activity android:name=".Enter_d"/>
+        <activity android:name=".Calendar_d"/>
         <activity android:name=".Day"/>
 
     </application>

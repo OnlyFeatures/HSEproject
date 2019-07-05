@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
+
 class Day: AppCompatActivity(){
     companion object{
         const val data = "data"
@@ -16,13 +17,14 @@ class Day: AppCompatActivity(){
         val datas = intent.getStringExtra(data)
         val text = findViewById<TextView>(R.id.textView)
         text.setText(datas)
-        initRecycler()
+        initRecycler(datas)
     }
-    private fun initRecycler() {
+    private fun initRecycler(datas:String) {
         val list = List(24,{i->""+i+":00"})
 
         val recycler = findViewById <RecyclerView>(R.id.recyclerList)
-        recycler.adapter = CalendarAdapter(list)
+        recycler.adapter = DayAdapter(list, datas)
         recycler.layoutManager = LinearLayoutManager(this)
     }
+
 }
