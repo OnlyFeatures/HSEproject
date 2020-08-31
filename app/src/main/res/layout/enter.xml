@@ -8,14 +8,15 @@
             android:text="ВОЙТИ КАК ДОКТОР"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_alignParentTop="true"
-            android:id="@+id/button1" android:layout_marginTop="490dp" android:background="@color/colorPrimaryDark"/>
+            android:layout_above="@+id/button2"
+            android:id="@+id/button1"  android:background="@color/colorPrimaryDark"
+           />
     <Button
             android:text="ВОЙТИ КАК ПАЦИЕНТ"
             android:layout_width="match_parent"
             android:layout_height="50dp" android:id="@+id/button2"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="128dp" android:background="@color/colorPrimaryDark"/>
+            android:layout_marginBottom="92dp" android:background="@color/colorPrimaryDark"/>
     <TextView
             android:text="Добро пожаловать в систему!"
             android:layout_width="365dp"

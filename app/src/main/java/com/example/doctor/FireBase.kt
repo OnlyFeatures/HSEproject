@@ -74,7 +74,7 @@ fun checkp(name:String, password: String, cb:(Boolean)->Unit){
     val ref = database.getReference(name)
     read(name){read->
         read as ArrayList<ArrayList<String>>
-        cb(read.get(0).get(0) == password&&read.get(0).get(1) == "doctor")
+        cb(read.get(0).get(0) == password&&read.get(0).get(1) == "")
         /*if (read.get(0).get(0)  = password){
 
         }*/
